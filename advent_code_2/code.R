@@ -30,10 +30,11 @@ for (x in 1:nrow(kvp)) {
   input$score[input$V3 == kvp$combination[x]] <- kvp$score[x]
 }
 
-# Calculate sum of scores
+# Answer 1 - Calculate sum of scores
 sum(input$score)
 
 # PART 2
+
 # X means you need to lose, 
 # Y means you need to end the round in a draw,
 # Z means you need to win
@@ -104,7 +105,7 @@ for (x in 1:nrow(input)) {
   }
 }
 
-# Calculate sum of new scores
+# Answer 2 - Calculate sum of new scores
 sum(input$score2)
 
 
