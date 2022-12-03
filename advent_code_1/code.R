@@ -1,4 +1,4 @@
-# Day 1
+# Set working directory
 setwd('Documents/Code_Advent/advent_code_1/')
 
 # Read in file 
@@ -39,10 +39,10 @@ for (x in 1:length(input)) {
 # Get all the counts 
 final <- na.omit(results)
 
-# Find max value - answer 1
+# Answer 1 - Find max value
 max(final)
 
-# Find top 3 values and add together - answer 2
+# Answer 2 - Find top 3 values and add together
 sum(sort(final, decreasing = T)[1:3])
 
 
